@@ -47,15 +47,15 @@ const RTD_DEFAULT_DATA = {
   ],
 
  missions: [
-    { img: "assets/img/missions/promotion touristique.jpg", titre: "Promotion touristique", texte: "Promouvoir Djibouti comme destination de premier plan aux niveaux régional et international." },
-    { img: "assets/img/missions/Valorisation du patrimoine.jpg", titre: "Valorisation du patrimoine", texte: "Inventorier, protéger et valoriser les sites culturels et naturels remarquables du pays." },
-    { img: "assets/img/missions/Protection de l'environnement.jpg", titre: "Protection de l'environnement", texte: "Défendre les écosystèmes fragiles : littoral, déserts, forêts et zones lacustres." },
-    { img: "assets/img/missions/Développement local.jpg", titre: "Développement local", texte: "Contribuer au développement socio-économique des régions et des communautés hôtes." },
-    { img: "assets/img/missions/Culture et traditions.jpg", titre: "Culture et traditions", texte: "Vivre et transmettre les traditions, les langues et les arts djiboutiens." },
-    { img: "assets/img/missions/Soutien aux initiatives économiques.jpg", titre: "Soutien aux initiatives économiques", texte: "Accompagner les jeunes et les femmes entrepreneurs du secteur du tourisme et de la culture." },
-    { img: "assets/img/missions/Promotion de l'image de djibouti.jpg", titre: "Promotion de l'image de Djibouti", texte: "Rayonner positivement, en Djibouti et à l'étranger, à travers des actions de communication." },
-    { img: "assets/img/missions/Coopération et partenariats.jpg", titre: "Coopération et partenariats", texte: "Développer des coopérations avec les institutions, ONG et acteurs du tourisme." }
-  ],
+  { img: "assets/img/mission-tourisme.jpg", titre: "Promotion touristique", texte: "Promouvoir Djibouti comme destination de premier plan aux niveaux régional et international." },
+  { img: "assets/img/mission-patrimoine.jpg", titre: "Valorisation du patrimoine", texte: "Inventorier, protéger et valoriser les sites culturels et naturels remarquables du pays." },
+  { img: "assets/img/mission-environnement.jpg", titre: "Protection de l'environnement", texte: "Défendre les écosystèmes fragiles : littoral, déserts, forêts et zones lacustres." },
+  { img: "assets/img/mission-developpement.jpg", titre: "Développement local", texte: "Contribuer au développement socio-économique des régions et des communautés hôtes." },
+  { img: "assets/img/mission-culture.jpg", titre: "Culture et traditions", texte: "Vivre et transmettre les traditions, les langues et les arts djiboutiens." },
+  { img: "assets/img/mission-initiatives.jpg", titre: "Soutien aux initiatives économiques", texte: "Accompagner les jeunes et les femmes entrepreneurs du secteur du tourisme et de la culture." },
+  { img: "assets/img/mission-image.jpg", titre: "Promotion de l'image de Djibouti", texte: "Rayonner positivement, en Djibouti et à l'étranger, à travers des actions de communication." },
+  { img: "assets/img/mission-cooperation.jpg", titre: "Coopération et partenariats", texte: "Développer des coopérations avec les institutions, ONG et acteurs du tourisme." }
+],
 
   destinations: [
     { img: "assets/img/photos/lac-assal.jpg", titre: "Lac Assal", texte: "Le point le plus bas d'Afrique (−155 m) : une merveille salée au cœur d'un décor volcanique spectaculaire.", alt: "Le Lac Assal et ses rivages de sel" },
