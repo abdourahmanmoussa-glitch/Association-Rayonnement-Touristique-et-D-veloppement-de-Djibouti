@@ -46,15 +46,15 @@ const RTD_DEFAULT_DATA = {
     { icone: "🤝", titre: "Coopération et partenariats", texte: "Construire des alliances avec les institutions, entreprises et organisations partenaires." }
   ],
 
-  missions: [
-    { icone: "🌍", titre: "Promotion touristique", texte: "Promouvoir Djibouti comme destination de premier plan aux niveaux régional et international." },
-    { icone: "🏛️", titre: "Valorisation du patrimoine", texte: "Inventorier, protéger et valoriser les sites culturels et naturels remarquables du pays." },
-    { icone: "🌱", titre: "Protection de l'environnement", texte: "Défendre les écosystèmes fragiles : littoral, déserts, forêts et zones lacustres." },
-    { icone: "🤝", titre: "Développement local", texte: "Contribuer au développement socio-économique des régions et des communautés hôtes." },
-    { icone: "🎭", titre: "Culture et traditions", texte: "Vivre et transmettre les traditions, les langues et les arts djiboutiens." },
-    { icone: "💼", titre: "Soutien aux initiatives économiques", texte: "Accompagner les jeunes et les femmes entrepreneurs du secteur du tourisme et de la culture." },
-    { icone: "📢", titre: "Promotion de l'image de Djibouti", texte: "Rayonner positivement, en Djibouti et à l'étranger, à travers des actions de communication." },
-    { icone: "🌐", titre: "Coopération et partenariats", texte: "Développer des coopérations avec les institutions, ONG et acteurs du tourisme." }
+ missions: [
+    { img: "assets/img/missions/promotion touristique.jpg", titre: "Promotion touristique", texte: "Promouvoir Djibouti comme destination de premier plan aux niveaux régional et international." },
+    { img: "assets/img/missions/Valorisation du patrimoine.jpg", titre: "Valorisation du patrimoine", texte: "Inventorier, protéger et valoriser les sites culturels et naturels remarquables du pays." },
+    { img: "assets/img/missions/Protection de l'environnement.jpg", titre: "Protection de l'environnement", texte: "Défendre les écosystèmes fragiles : littoral, déserts, forêts et zones lacustres." },
+    { img: "assets/img/missions/Développement local.jpg", titre: "Développement local", texte: "Contribuer au développement socio-économique des régions et des communautés hôtes." },
+    { img: "assets/img/missions/Culture et traditions.jpg", titre: "Culture et traditions", texte: "Vivre et transmettre les traditions, les langues et les arts djiboutiens." },
+    { img: "assets/img/missions/Soutien aux initiatives économiques.jpg", titre: "Soutien aux initiatives économiques", texte: "Accompagner les jeunes et les femmes entrepreneurs du secteur du tourisme et de la culture." },
+    { img: "assets/img/missions/Promotion de l'image de djibouti.jpg", titre: "Promotion de l'image de Djibouti", texte: "Rayonner positivement, en Djibouti et à l'étranger, à travers des actions de communication." },
+    { img: "assets/img/missions/Coopération et partenariats.jpg", titre: "Coopération et partenariats", texte: "Développer des coopérations avec les institutions, ONG et acteurs du tourisme." }
   ],
 
   destinations: [
