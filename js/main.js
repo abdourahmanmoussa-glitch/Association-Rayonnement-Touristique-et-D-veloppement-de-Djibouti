@@ -57,9 +57,11 @@ function renderQui() {
 function renderMissions() {
   $("#missionsGrid").innerHTML = DATA.missions.map(m => `
     <article class="card mission-card reveal">
-      <div class="ic">${m.icone}</div>
-      <h3>${esc(m.titre)}</h3>
-      <p>${esc(m.texte)}</p>
+      <img src="${esc(m.img)}" alt="${esc(m.titre)}" loading="lazy" class="mission-img">
+      <div class="mission-body">
+        <h3>${esc(m.titre)}</h3>
+        <p>${esc(m.texte)}</p>
+      </div>
     </article>`).join("");
 }
 
