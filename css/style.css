@@ -280,7 +280,7 @@ h1,h2,h3,h4{font-family:var(--font-title);color:var(--blue-deep);line-height:1.2
   .footer-grid{grid-template-columns:1fr;gap:28px}
   .form-row{grid-template-columns:1fr}
   .stats{gap:18px}
-  .brand-text small{display:none}
+  .brand-text strong{font-size:.68rem;max-width:180px;display:block}
   .hero h1{font-size:1.45rem}
   .hero-actions .btn{width:100%;max-width:320px}
   .about-badge{position:static;margin-top:14px;max-width:100%}
