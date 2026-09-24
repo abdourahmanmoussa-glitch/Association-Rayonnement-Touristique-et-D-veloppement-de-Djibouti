@@ -110,7 +110,9 @@ function renderProjets() {
 function renderActualites() {
   $("#actualitesGrid").innerHTML = DATA.actualites.map(a => `
     <article class="card actu-card reveal">
-      <img src="${esc(a.img)}" alt="${esc(a.alt || a.titre)}" loading="lazy">
+      ${a.video
+        ? `<video src="${esc(a.video)}" controls playsinline poster="${esc(a.img)}" class="actu-video"></video>`
+        : `<img src="${esc(a.img)}" alt="${esc(a.alt || a.titre)}" loading="lazy">`}
       <div class="actu-body">
         <div class="actu-date">${esc(a.date)}</div>
         <h3>${esc(a.titre)}</h3>
