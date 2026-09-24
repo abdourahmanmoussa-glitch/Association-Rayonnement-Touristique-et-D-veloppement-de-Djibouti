@@ -108,17 +108,17 @@ function renderProjets() {
 }
 
 function renderActualites() {
-  $("#actualitesGrid").innerHTML = DATA.actualites.map(a => `
+  $("#actualitesGrid").innerHTML = DATA.actualites.map((a, i) => `
     <article class="card actu-card reveal">
       ${a.video
-        ? `<video src="${esc(a.video)}" controls playsinline poster="${esc(a.img)}" class="actu-video"></video>`
+        ? `<video src="${esc(a.video)}" controls playsinline preload="metadata" class="actu-video"></video>`
         : `<img src="${esc(a.img)}" alt="${esc(a.alt || a.titre)}" loading="lazy">`}
       <div class="actu-body">
         <div class="actu-date">${esc(a.date)}</div>
         <h3>${esc(a.titre)}</h3>
         <p>${esc(a.resume)}</p>
         <button class="btn btn-sm btn-outline-lire actu-btn" style="color:var(--blue);border:1.5px solid var(--line)"
-          data-titre="${esc(a.titre)}" data-date="${esc(a.date)}" data-texte="${esc(a.resume)}">Lire la suite</button>
+          data-index="${i}">Lire la suite</button>
       </div>
     </article>`).join("");
 }
@@ -266,24 +266,27 @@ function initLightbox() {
 }
 
 function initModals() {
-  // Boutons « Découvrir » / « Lire la suite » : affiche le détail dans la lightbox (texte)
   document.addEventListener("click", e => {
     const b = e.target.closest(".dest-btn, .actu-btn");
     if (!b) return;
     const lb = $("#lightbox"), img = $("#lightboxImg"), cap = $("#lightboxCaption");
-    const texte = b.dataset.texte;
+
     if (b.classList.contains("actu-btn")) {
-      // Pour une actualité : montre le résumé complet
-      cap.innerHTML = `<strong style="display:block;font-size:1.1rem;margin-bottom:8px">${esc(b.dataset.titre)}</strong>` +
-                      `<span style="opacity:.8">${esc(b.dataset.date)}</span><br><br>${esc(texte)}<br><br>` +
-                      `<em>Contenu complet de l'article à venir.</em>`;
-      img.removeAttribute("src"); img.style.display = "none";
+      const idx = parseInt(b.dataset.index);
+      const a = DATA.actualites[idx];
+      img.removeAttribute("src");
+      img.style.display = "none";
+      cap.innerHTML = `
+        <strong style="display:block;font-size:1.15rem;margin-bottom:8px">${esc(a.titre)}</strong>
+        <span style="opacity:.8;font-size:.85rem">${esc(a.date)}</span>
+        <p style="margin-top:14px;text-align:left;line-height:1.7;color:#dcebf5">${esc(a.texteComplet || a.resume)}</p>`;
     } else {
       img.style.display = "block";
       img.src = b.closest(".dest-card").querySelector("img").src;
-      cap.innerHTML = `<strong style="display:block;font-size:1.2rem;margin-bottom:8px">${esc(b.dataset.titre)}</strong>${esc(texte)}`;
+      cap.innerHTML = `<strong style="display:block;font-size:1.2rem;margin-bottom:8px">${esc(b.dataset.titre)}</strong>${esc(b.dataset.texte)}`;
     }
-    lb.classList.add("open"); lb.setAttribute("aria-hidden", "false");
+    lb.classList.add("open");
+    lb.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
   });
 }
