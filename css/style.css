@@ -166,7 +166,7 @@ h1,h2,h3,h4{font-family:var(--font-title);color:var(--blue-deep);line-height:1.2
 .actu-body h3{font-size:1.05rem;margin-bottom:10px}
 .actu-body p{color:var(--muted);font-size:.9rem;margin-bottom:16px;flex:1}
 .actu-video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
-.actu-video{width:100%;aspect-ratio:16/9;display:block;background:#000}
+.actu-video{width:100%;aspect-ratio:16/9;display:block;background:#000;min-height:200px}
 
 /* Galerie */
 .filter-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
