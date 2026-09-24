@@ -101,7 +101,7 @@ const RTD_DEFAULT_DATA = {
   ],
 
   actualites: [
-    { img: "assets/img/photos/djibouti-ville.jpg",
+    { img: "assets/img/photos/damerjog.jpg",
       alt: "Lancement du projet énergétique de Damerjog",
       titre: "Djibouti lance un projet énergétique stratégique de 160 millions de dollars à Damerjog",
       date: "2026",
