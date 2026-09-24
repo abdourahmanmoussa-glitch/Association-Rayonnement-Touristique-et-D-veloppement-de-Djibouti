@@ -9,7 +9,7 @@ const RTD_DEFAULT_DATA = {
 
   contact: {
     nom: "Association Rayonnement Touristique et Développement de Djibouti",
-    email: "moussa1621@yahoo.fr",
+    email: "qarawil2019@gmail.com",
     tel1: "77 15 71 86",
     tel2: "77 82 11 21",
     adresse: "Djibouti-ville, République de Djibouti",
