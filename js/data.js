@@ -101,10 +101,12 @@ const RTD_DEFAULT_DATA = {
   ],
 
   actualites: [
-    { img: "assets/img/photos/djibouti-ville.jpg", alt: "Campagne de promotion touristique à Djibouti-ville",
-      titre: "L'association lance sa campagne de promotion touristique",
-      date: "12 septembre 2026",
-      resume: "Une nouvelle campagne destinée à faire découvrir les trésors touristiques de Djibouti auprès des voyageurs et des partenaires régionaux." },
+    { img: "assets/img/photos/damerjog.jpg",
+  alt: "Lancement du projet énergétique de Damerjog",
+  titre: "Djibouti lance un projet énergétique stratégique de 160 millions de dollars à Damerjog",
+  date: "2026",
+  resume: "Le Président Ismaïl Omar Guelleh a lancé les travaux d'un terminal pétrolier et d'un pipeline de 120 km au Parc industriel de Damerjog, avec le Premier ministre éthiopien Dr Abiy Ahmed Ali et le groupe Dangote.",
+  video: "assets/img/damerjog.mp4" },
     { img: "assets/img/photos/foret-du-day.jpg", alt: "Journée de sensibilisation à la forêt du Day",
       titre: "Journée de sensibilisation à la forêt du Day",
       date: "28 août 2026",
